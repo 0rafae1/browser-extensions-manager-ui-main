@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/variables.css">
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/extensions.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Browser extensions manager UI</title>
@@ -27,13 +28,14 @@
   </header>
   <main>
     <section class="extensions-list">
-      <h1>Extensions List</h1>
-      <div>
-       <button>All</button>
-        <button>Active</button>
-        <button>Inactive</button>
+      <h1 class="extensions-list__tittle">Extensions List</h1>
+      <div class="extensions-list__filters">
+        <button class="extensions-list__filters-filter">All</button>
+        <button class="extensions-list__filters-filter">Active</button>
+        <button class="extensions-list__filters-filter">Inactive</button>
       </div>
-      <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
+    </section>
+    <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
 
       DevLens
       Quickly inspect page layouts and visualize element boundaries.
@@ -82,7 +84,6 @@
       ConsolePlus
       Enhanced developer console with advanced filtering and logging.
       Remove
-    </section>
   </main>
 
   <footer class="attribution">

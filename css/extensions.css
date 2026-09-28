@@ -1,0 +1,32 @@
+.extensions-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+
+.extensions-list__tittle {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: var(--color-neutral-900);
+}
+
+.extensions-list__filters {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.extensions-list__filters-filter {
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding: 1.25rem;
+  font-size: larger;
+  color: var(--color-neutral-900);
+  background-color: var(--color-neutral-0);
+  border: 1px solid var(--color-neutral-200);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  cursor: pointer;
+}
