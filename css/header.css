@@ -13,7 +13,7 @@
   border-radius: 20px;
 }
 
-.theme {
+.header__theme {
   background-color: var(--color-neutral-100);
   display: flex;
   align-items: center;
@@ -23,12 +23,12 @@
   border-radius: 15px;
 }
 
-.theme,
-.theme-toggle {
+.header__theme,
+.header__theme-toggle {
   cursor: pointer;
 }
 
-.theme-toggle {
+.header__theme-toggle {
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
@@ -41,7 +41,7 @@
   mask-position: center;
 }
 
-.theme-toggle--icon {
+.header__theme-toggle--moon {
   -webkit-mask-image: url("../assets/images/icon-moon.svg");
   mask-image: url("../assets/images/icon-moon.svg");
 }
