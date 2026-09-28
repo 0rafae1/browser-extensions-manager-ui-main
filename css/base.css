@@ -1,10 +1,9 @@
-body{
+body {
   font-family: var(--font--primary);
   background-image: var(--light--gradient);
   color: var(--color-neutral-600);
+  margin: 0 130px;
 }
-
-
 
 
 .attribution {
