@@ -1,5 +1,11 @@
 import { buscarExtensoes } from "./data.js";
+import { renderizarCards } from "./render.js";
 
-let extensoes = await buscarExtensoes();
+const container = document.querySelector('.extensions-grid');
 
-console.log(extensoes);
+async function iniciar() {
+    let extensoes = await buscarExtensoes();
+    renderizarCards(extensoes, container);
+}
+
+iniciar();
