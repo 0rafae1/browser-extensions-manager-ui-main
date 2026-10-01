@@ -14,11 +14,22 @@ export function renderizarCards(extensoes, container) {
         <div class="extensions-grid__extension-actions">
           <button class="extensions-grid__extension-remove">Remove</button>
           <label class="extensions-grid__extension-toggle">
-            <input type="checkbox" class="extensions-grid__extension-toggle-input" aria-label="Ativar ou desativar extensão ${extensao.name}">
+            <input type="checkbox" class="extensions-grid__extension-toggle-input" ${extensao.isActive ? "checked" : ""} aria-label="Ativar ou desativar extensão ${extensao.name}">
             <span class="extensions-grid__extension-toggle-slider"></span>
           </label>
         </div>
         `;
+        let checkbox = card.querySelector(".extensions-grid__extension-toggle-input")
+        let removeButton = card.querySelector(".extensions-grid__extension-remove")
+
+        checkbox.addEventListener("change", () => {
+          extensao.isActive = checkbox.checked
+        });
+
+        removeButton.addEventListener("click", () => {
+          card.remove();
+          extensoes = extensoes.filter((extensaoAtual) => extensaoAtual.name !== extensao.name);
+        })
     container.appendChild(card);
   });
 }
