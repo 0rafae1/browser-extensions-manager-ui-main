@@ -1,0 +1,107 @@
+.extensions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.extensions-grid__extension {
+  background-color: var(--color-neutral-0);
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.extensions-grid__extension-icon-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.extensions-grid__extension-icon-wrapper img {
+  width: 3.5rem;
+  height: 3.5rem;
+  flex-shrink: 0;
+}
+
+.extensions-grid__extension-info {
+  min-width: 0;
+}
+
+.extensions-grid__extension-name {
+  color: var(--color-neutral-900);
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+}
+
+.extensions-grid__extension-description {
+  color: var(--color-neutral-600);
+  font-size: 1rem;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+
+.extensions-grid__extension-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.extensions-grid__extension-remove {
+  color: var(--color-neutral-900);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.extensions-grid__extension-toggle-input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.extensions-grid__extension-toggle {
+  position: relative;
+  display: inline-block;
+  width: 2.5rem;
+  height: 1.5rem;
+}
+
+.extensions-grid__extension-toggle-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-neutral-300);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.extensions-grid__extension-toggle-slider::before {
+  content: "";
+  position: absolute;
+  height: 1.2rem;
+  width: 1.2rem;
+  left: 0.14rem;
+  bottom: 0.14rem;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.extensions-grid__extension-toggle-input:checked
+  + .extensions-grid__extension-toggle-slider {
+  background-color: var(--color-red-500);
+}
+
+.extensions-grid__extension-toggle-input:checked
+  + .extensions-grid__extension-toggle-slider::before {
+  transform: translateX(1rem);
+}

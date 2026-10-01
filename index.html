@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/extensions.css">
+  <link rel="stylesheet" href="./css/extension-grid.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Browser extensions manager UI</title>
@@ -35,55 +36,25 @@
         <button class="extensions-list__filters-filter">Inactive</button>
       </div>
     </section>
-    <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
-
-      DevLens
-      Quickly inspect page layouts and visualize element boundaries.
-      Remove
-
-      StyleSpy
-      Instantly analyze and copy CSS from any webpage element.
-      Remove
-
-      SpeedBoost
-      Optimizes browser resource usage to accelerate page loading.
-      Remove
-
-      JSONWizard
-      Formats, validates, and prettifies JSON responses in-browser.
-      Remove
-
-      TabMaster Pro
-      Organizes browser tabs into groups and sessions.
-      Remove
-
-      ViewportBuddy
-      Simulates various screen resolutions directly within the browser.
-      Remove
-
-      Markup Notes
-      Enables annotation and notes directly onto webpages for collaborative debugging.
-      Remove
-
-      GridGuides
-      Overlay customizable grids and alignment guides on any webpage.
-      Remove
-
-      Palette Picker
-      Instantly extracts color palettes from any webpage.
-      Remove
-
-      LinkChecker
-      Scans and highlights broken links on any page.
-      Remove
-
-      DOM Snapshot
-      Capture and export DOM structures quickly.
-      Remove
-
-      ConsolePlus
-      Enhanced developer console with advanced filtering and logging.
-      Remove
+    <section class="extensions-grid">
+      <h2 class="visually-hidden">Grupo de Extensões</h2>
+      <div class="extensions-grid__extension">
+        <div class="extensions-grid__extension-icon-wrapper">
+          <img src="./assets/images/logo-devlens.svg" alt="Ícone da extensão DevLens">
+          <div class="extensions-grid__extension-info">
+            <h3 class="extensions-grid__extension-name">DevLens</h3>
+            <p class="extensions-grid__extension-description">Quickly inspect page layouts and visualize element boundaries.</p>
+          </div>
+        </div>
+        <div class="extensions-grid__extension-actions">
+          <button class="extensions-grid__extension-remove">Remove</button>
+          <label class="extensions-grid__extension-toggle">
+            <input type="checkbox" class="extensions-grid__extension-toggle-input">
+            <span class="extensions-grid__extension-toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="attribution">
