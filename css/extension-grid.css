@@ -91,14 +91,14 @@
   width: 1.2rem;
   left: 0.14rem;
   bottom: 0.14rem;
-  background-color: white;
+  background-color: var(--color-neutral-0);
   border-radius: 50%;
   transition: transform 0.2s;
 }
 
 .extensions-grid__extension-toggle-input:checked
   + .extensions-grid__extension-toggle-slider {
-  background-color: var(--color-red-500);
+  background-color: var(--color-red-700);
 }
 
 .extensions-grid__extension-toggle-input:checked
