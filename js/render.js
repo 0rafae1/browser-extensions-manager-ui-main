@@ -19,17 +19,22 @@ export function renderizarCards(extensoes, container) {
           </label>
         </div>
         `;
-        let checkbox = card.querySelector(".extensions-grid__extension-toggle-input")
-        let removeButton = card.querySelector(".extensions-grid__extension-remove")
+    let checkbox = card.querySelector(
+      ".extensions-grid__extension-toggle-input",
+    );
+    let removeButton = card.querySelector(".extensions-grid__extension-remove");
 
-        checkbox.addEventListener("change", () => {
-          extensao.isActive = checkbox.checked
-        });
+    checkbox.addEventListener("change", () => {
+      extensao.isActive = checkbox.checked;
+    });
 
-        removeButton.addEventListener("click", () => {
-          card.remove();
-          extensoes = extensoes.filter((extensaoAtual) => extensaoAtual.name !== extensao.name);
-        })
+    removeButton.addEventListener("click", () => {
+      card.remove();
+      const indice = extensoes.findIndex(
+        (extensaoAtual) => extensaoAtual.name === extensao.name,
+      );
+      extensoes.splice(indice, 1);
+    });
     container.appendChild(card);
   });
 }
