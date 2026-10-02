@@ -1,23 +1,23 @@
-.extensions-list {
+.extensions {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-bottom: 2rem;
 }
 
-.extensions-list__tittle {
+.extensions__title {
   display: flex;
   align-items: center;
   margin: 0;
   color: var(--color-neutral-900);
 }
 
-.extensions-list__filters {
+.extensions__filters {
   display: flex;
   gap: 0.625rem;
 }
 
-.extensions-list__filters-filter {
+.extensions__filter {
   display: flex;
   align-items: center;
   height: 3rem;
@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 
-.extensions-list__filters-filter--active {
+.extensions__filter--active {
   color: var(--color-neutral-0);
   background-color: var(--color-red-700);
 }
