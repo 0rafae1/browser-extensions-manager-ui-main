@@ -5,5 +5,5 @@
   padding-top: 3.5rem;
 }
 .footer a {
-  color: hsl(228, 45%, 44%);
+  color: var(--color-attribution);
 }
