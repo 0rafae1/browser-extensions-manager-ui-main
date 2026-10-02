@@ -30,3 +30,8 @@
   border-radius: 25px;
   cursor: pointer;
 }
+
+.extensions-list__filters-filter--active {
+  color: var(--color-neutral-0);
+  background-color: var(--color-red-700);
+}
