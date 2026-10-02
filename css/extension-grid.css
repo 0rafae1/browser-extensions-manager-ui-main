@@ -58,6 +58,11 @@
   cursor: pointer;
 }
 
+.extensions-grid__extension-remove:hover {
+  color: var(--color-neutral-0);
+  background-color: var(--color-red-700);
+}
+
 .extensions-grid__extension-toggle-input {
   position: absolute;
   opacity: 0;
@@ -99,6 +104,11 @@
 .extensions-grid__extension-toggle-input:checked
   + .extensions-grid__extension-toggle-slider {
   background-color: var(--color-red-700);
+}
+
+.extensions-grid__extension-toggle-input:checked
+  + .extensions-grid__extension-toggle-slider:hover {
+  background-color: var(--color-red-500);
 }
 
 .extensions-grid__extension-toggle-input:checked

@@ -28,6 +28,10 @@
   cursor: pointer;
 }
 
+.header__theme:hover{
+  background-color: var(--color-neutral-300);
+}
+
 .header__theme-toggle {
   display: inline-block;
   width: 1.5rem;

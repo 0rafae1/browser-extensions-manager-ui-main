@@ -31,7 +31,18 @@
   cursor: pointer;
 }
 
+.extensions__filter:hover {
+  color: var(--color-neutral-600);
+  background-color: var(--light--gradient);
+  box-shadow: none;
+}
+
 .extensions__filter--active {
   color: var(--color-neutral-0);
   background-color: var(--color-red-700);
+}
+
+.extensions__filter--active:hover {
+  color: var(--color-neutral-0);
+  background-color: var(--color-red-500);
 }
