@@ -57,3 +57,8 @@
   -webkit-mask-image: url("../assets/images/icon-moon.svg");
   mask-image: url("../assets/images/icon-moon.svg");
 }
+
+.header__theme-toggle--sun {
+  -webkit-mask-image: url("../assets/images/icon-sun.svg");
+  mask-image: url("../assets/images/icon-sun.svg");
+}
