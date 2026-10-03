@@ -5,8 +5,8 @@
 }
 
 .extensions-grid__extension {
-  background-color: var(--color-neutral-0);
-  border: 1px solid var(--color-neutral-200);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
   border-radius: 18px;
   box-shadow: 0 1px 3px var(--color-box-shadow);
   padding: 1.5rem;
@@ -31,13 +31,13 @@
 }
 
 .extensions-grid__extension-name {
-  color: var(--color-neutral-900);
+  color: var(--color-text);
   font-weight: 700;
   margin: 0 0 0.25rem;
 }
 
 .extensions-grid__extension-description {
-  color: var(--color-neutral-600);
+  color: var(--color-text-muted);
   font-size: 1rem;
   margin-top: 0px;
   margin-bottom: 1rem;
@@ -50,17 +50,17 @@
 }
 
 .extensions-grid__extension-remove {
-  color: var(--color-neutral-900);
+  color: var(--color-text);
   padding: 0.5rem 1rem;
-  border: 1px solid var(--color-neutral-200);
+  border: 1px solid var(--color-border);
   border-radius: 20px;
   background-color: transparent;
   cursor: pointer;
 }
 
 .extensions-grid__extension-remove:hover {
-  color: var(--color-neutral-0);
-  background-color: var(--color-red-700);
+  color: var(--color-surface);
+  background-color: var(--color-accent);
 }
 
 .extensions-grid__extension-toggle-input {
@@ -83,7 +83,7 @@
   left: -3px;
   right: 0;
   bottom: 0;
-  background-color: var(--color-neutral-300);
+  background-color: var(--color-neutral-inactive);
   border-radius: 999px;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -96,19 +96,19 @@
   width: 1rem;
   left: 0.1rem;
   bottom: 0.1rem;
-  background-color: var(--color-neutral-0);
+  background-color: var(--color-surface);
   border-radius: 50%;
   transition: transform 0.2s;
 }
 
 .extensions-grid__extension-toggle-input:checked
   + .extensions-grid__extension-toggle-slider {
-  background-color: var(--color-red-700);
+  background-color: var(--color-accent);
 }
 
 .extensions-grid__extension-toggle-input:checked
   + .extensions-grid__extension-toggle-slider:hover {
-  background-color: var(--color-red-500);
+  background-color: var(--color-accent-hover);
 }
 
 .extensions-grid__extension-toggle-input:checked

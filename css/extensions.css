@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   margin: 0;
-  color: var(--color-neutral-900);
+  color: var(--color-text);
 }
 
 .extensions__filters {
@@ -23,26 +23,26 @@
   height: 3rem;
   padding: 1.25rem;
   font-size: larger;
-  color: var(--color-neutral-900);
-  background-color: var(--color-neutral-0);
-  border: 1px solid var(--color-neutral-200);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
   box-shadow: 0 1px 3px var(--color-box-shadow);
   border-radius: 25px;
   cursor: pointer;
 }
 
 .extensions__filter:hover {
-  color: var(--color-neutral-600);
-  background-color: var(--light--gradient);
+  color: var(--color-text-muted);
+  background-color: var(--color-page-gradient);
   box-shadow: none;
 }
 
 .extensions__filter--active {
-  color: var(--color-neutral-0);
-  background-color: var(--color-red-700);
+  color: var(--color-surface);
+  background-color: var(--color-accent);
 }
 
 .extensions__filter--active:hover {
-  color: var(--color-neutral-0);
-  background-color: var(--color-red-500);
+  color: var(--color-surface);
+  background-color: var(--color-accent-hover);
 }

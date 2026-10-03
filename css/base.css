@@ -1,7 +1,7 @@
 body {
   font-family: var(--font--primary);
-  background-image: var(--light--gradient);
-  color: var(--color-neutral-600);
+  background-image: var(--color-page-gradient);
+  color: var(--color-text-muted);
   margin: 0 130px;
 }
 
