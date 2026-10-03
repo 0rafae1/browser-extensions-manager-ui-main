@@ -21,5 +21,23 @@
 
   --color-box-shadow: hsl(0 0% 0% / 0.1);
 
-  --color-attribution: hsl(228, 45%, 44%)
+  --color-attribution: hsl(228, 45%, 44%);
+}
+
+body.dark {
+  --color-text: hsl(0, 0%, 93%);
+  --color-text-muted: hsl(0, 0%, 78%);
+  --color-surface: hsl(226, 25%, 17%);
+  --color-surface-secondary: hsl(225, 23%, 24%);
+  --color-border: hsl(225, 23%, 24%);
+  --color-neutral-inactive: hsl(226, 11%, 37%);
+
+  --color-accent: hsl(3, 86%, 64%);
+  --color-accent-hover: hsl(3, 71%, 56%);
+
+  --color-page-gradient: linear-gradient(
+    180deg,
+    hsl(220, 71%, 5%) 0%,
+    hsl(226, 77%, 15%) 100%
+  );
 }
