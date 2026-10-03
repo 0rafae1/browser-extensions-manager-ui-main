@@ -7,8 +7,11 @@
   --color-text-muted: hsl(226, 11%, 37%);
   --color-surface: hsl(200, 60%, 99%);
   --color-surface-secondary: hsl(0, 0%, 93%);
+  --color-toggle-knob: hsl(200, 60%, 99%);
   --color-border: hsl(217, 61%, 90%);
   --color-neutral-inactive: hsl(0, 0%, 78%);
+  --color-filter-hover-bg: hsl(210, 100%, 98%);
+  --color-filter-hover-text:hsl(226, 11%, 37%);
 
   --color-accent: hsl(3, 77%, 44%);
   --color-accent-hover: hsl(3, 71%, 56%);
@@ -31,6 +34,8 @@ body.dark {
   --color-surface-secondary: hsl(225, 23%, 24%);
   --color-border: hsl(225, 23%, 24%);
   --color-neutral-inactive: hsl(226, 11%, 37%);
+  --color-filter-hover-bg: hsl(226, 11%, 37%);
+  --color-filter-hover-text: hsl(0, 0%, 93%);
 
   --color-accent: hsl(3, 86%, 64%);
   --color-accent-hover: hsl(3, 71%, 56%);
@@ -40,4 +45,6 @@ body.dark {
     hsl(220, 71%, 5%) 0%,
     hsl(226, 77%, 15%) 100%
   );
+  
+  --color-attribution: hsl(3, 86%, 64%);
 }

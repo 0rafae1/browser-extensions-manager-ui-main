@@ -96,7 +96,7 @@
   width: 1rem;
   left: 0.1rem;
   bottom: 0.1rem;
-  background-color: var(--color-surface);
+  background-color: var(--color-toggle-knob);
   border-radius: 50%;
   transition: transform 0.2s;
 }

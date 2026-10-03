@@ -32,8 +32,8 @@
 }
 
 .extensions__filter:hover {
-  color: var(--color-text-muted);
-  background-color: var(--color-page-gradient);
+  color: var(--color-filter-hover-text);
+  background-color: var(--color-filter-hover-bg);
   box-shadow: none;
 }
 
