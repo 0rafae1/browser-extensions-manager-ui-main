@@ -2,6 +2,14 @@
     padding: 2.5rem 0 4rem;
 }
 
+.header__logo-icon {
+  fill: var(--color-accent);
+}
+
+.header__logo-text {
+  fill: var(--color-text);
+}
+
 .header__top {
   display: flex;
   justify-content: space-between;
